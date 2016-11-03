@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	
+body{background-image: url(superman.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+position: 50% 15%;}
+
+
+#CK{background-image: url(toonck.jpeg);
+    padding: 25px;}
+
+#Steel{background-image: url(smsuper.jpg); background-size: 97%; background-repeat: no-repeat;
+       padding: 25px;}
+
+#CKB{background-color: blue;
+       font-size: 18px;
+       color: silver;
+       margin-top: 55%;}
+
+#ST{background-color: blue;
+       font-size: 18px;
+       color: gold;
+       margin-top: 55%}
+
+input{background-color: red;
+      font-size: 24px;
+       color: gold;
+       height: 120%;
+   		}
+
+
+td, tr{text-align: center;}
+
+table{background-color: blue;
+margin-left: 1%;}
+
+h1{background-color: gold;
+   width: 45%;
+   margin-left: 30%;
+   animation: super 6s infinite;
+ }
+
+@keyframes super {
+   0% {top: 0px; right: 200px; background: red;}
+  25% {top: 0px; right: 100px; background: gold;}
+  50% {top: 200px; right: 0px; background: navy;}
+  75% {top: 200px; right: 0px; background: yellow;}
+}
+
+
+#answer{text-align: right;
+font-size: 24px;}
+
+@media (max-width: 600px) {
+  body{
+    background: linear-gradient(90deg, blue, red);
+    background-color: red;
+    background-size: 25%}
+    h1{margin-bottom: 120%;}
+button{display: none;}
+#CK,#Steel{display: none;}
+}
+
+
+</style>
+
+<body id="Change">
+
+
+<center>
+
+<div class="whole">
+
+<FORM NAME="Calc">
+
+
+<TABLE id="cal" BORDER=4>
+<TR>
+
+<th colspan="4"><INPUT id="answer" TYPE="text"   NAME="Input" Size="24"></th>
+</tr>
+
+<tr>
+<td><INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'"></td>
+<td><INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'"></td>
+<td><INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnCLick="Calc.Input.value += '9'"></td>
+<td rowspan="2"><INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)"></td>
+</tr>
+
+<tr>
+<td><INPUT TYPE="button" NAME="four"  VALUE="  4  " OnCLick="Calc.Input.value += '4'"></td>
+<td><INPUT TYPE="button" NAME="five"  VALUE="  5  " OnClick="Calc.Input.value += '5'"></td>
+<td><INPUT TYPE="button" NAME="six"   VALUE="  6  " OnCLick="Calc.Input.value += '6'"></td>
+
+</tr>
+
+<tr>
+<td><INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'"> </td>
+<td><INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'"> </td>
+<td><INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'"> </td>
+<td><INPUT TYPE="button" NAME="Reset"  VALUE="  C " OnClick="Calc.Input.value = '  '"></td>
+
+</tr>
+
+
+<tr>
+
+<td><INPUT TYPE="button" NAME="minus"  VALUE="  -  " OnClick="Calc.Input.value += ' - '"></td>
+<td><INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '"></td>
+<td><INPUT TYPE="button" NAME="divide"  VALUE="  /  " OnClick="Calc.Input.value += ' / '"></td>
+<td><INPUT TYPE="button" NAME="multiply"  VALUE="  *  " OnClick="Calc.Input.value += ' * '"></td>
+
+
+</tr>
+
+<tr>
+	<td id="CK" colspan="2" style="text-align: center"><button id="CKB" type="button" onclick="document.getElementById('Change').style.backgroundImage = 'url(ck.jpeg)'" >Incognito</button></td>
+    
+    <td id="Steel" colspan="2" style="text-align: center"><button id="ST" type="button" onclick="document.getElementById('Change').style.backgroundImage = 'url(superman.jpg)'" >Super<span style="color: red">Mode</span></button></td>
+</tr>
+
+
+</TABLE>
+</FORM>
+
+
+
+</div>
+
+</center>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<h1 style="font-size: 3em; color: navy; text-align: center; text-decoration: bold;">Alter<span style="color: red">EGO</span> Calculator</h1>
+
+</body>
+
+<style type="text/css">
+
+@media (max-width: 600px) {
+  body{
+    background: linear-gradient(90deg, blue, red);
+    background-color: red;}
+    h1{margin-bottom: 120%;}
+  }
+}
+</style>
+
+
+
+</html>
